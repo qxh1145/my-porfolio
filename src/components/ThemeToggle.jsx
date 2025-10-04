@@ -44,7 +44,7 @@ const ThemeToggle = () => {
           checked={theme === 'light'}
           onChange={selectTheme('light')}
         />
-        <span>Light </span>
+        <span>LIGHT </span>
       </label>
       <label className="theme-option">
         <input
@@ -54,7 +54,7 @@ const ThemeToggle = () => {
           checked={theme === 'dark'}
           onChange={selectTheme('dark')}
         />
-        <span>Dark </span>
+        <span>DARK </span>
       </label>
     </div>
   );
