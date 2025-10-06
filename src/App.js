@@ -1,60 +1,37 @@
-import Name from './components/Name';
 import About from './components/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Threads from './components/Threads';
 import ThemeToggle from './components/ThemeToggle';
-import Nav from './components/Nav';
+import Project from './components/Project';
+import Info from './components/Info';
+import Contact from './components/Contact';
+import Sandk from './components/Sandk';
 import LandingSplash from './components/LandingSplash';
 import MobileBlocker from './components/MobileBlocker';
 import { Routes, Route } from "react-router-dom";
-import './App.css';
+import Layout from './Layout';
+
 function App() {
   return (
     <>
-    <html className='page' style={{marginBottom: '50px'}}>
-    <LandingSplash duration={2000} fadeDuration={600} />
-    <MobileBlocker title="Open this page in desktop" description="This experience is optimized for larger screens." />
-    <div style={{position: 'absolute', top: '80vh', left: '-8vh', }}><ThemeToggle /></div>
-    
-    <div
-      style={{
-        border: '1px solid var(--border-color)',
-        margin: '5vh 4vh 0 5vh',
-        height: '89vh',
-        position: 'relative',
-        overflow: 'hidden',
-      }}
-    >
-      <div style={{position: 'absolute'}}>
-      <Name />
+      <LandingSplash duration={2000} fadeDuration={600} />
+      <MobileBlocker title="Open this page in desktop" description="This experience is optimized for larger screens." />
+      <div style={{ position: 'absolute', top: '80vh', left: '-8vh' }}>
+        <ThemeToggle />
       </div>
-      
-      <div style={{position: "absolute", top: '25%', textDecoration: 'none'}}><Nav /></div>
 
-      <div
-        style={{
-          position: 'absolute',
-          inset: 0,
-          width: '100%',
-          height: '100%',
-          overflow: 'hidden',
-          zIndex: 0,
-        }}
-      >
-        <Threads
-          amplitude={4}
-          distance={0}
-          enableMouseInteraction={true}
-          color={[1, 1, 1]}
-          style={{ width: '100%', height: '100%' }}
-        />
-      </div>
-      
-      <About />
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path='/' element={<About />} />
+          <Route path="projects" element={<Project />} />
+          <Route path="info" element={<Info />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="skills" element={<Sandk />} />
+        </Route>
+      </Routes>
 
-    </div>
-    <span style={{marginLeft: '4%', color: '#D3D3D3', fontFamily: 'Courier New, Courier, monospace'}}>Inspired by Keita Yamada porfolio</span>
-    </html>
+      <span style={{ marginLeft: '4%', color: '#D3D3D3', fontFamily: 'Courier New, Courier, monospace' }}>
+        Inspired by Keita Yamada porfolio
+      </span>
     </>
   );
 }
