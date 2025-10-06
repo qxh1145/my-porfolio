@@ -6,7 +6,7 @@
 }
 
 :root[data-theme='dark'] {
-  --background-color: #000000;
+  --background-color: #0c0d0d;
   --text-color: #f8fafc;
   --border-color: rgba(248, 250, 252, 0.42);
   color-scheme: dark;
@@ -30,7 +30,7 @@ label {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  /* transition: background-color 0.3s ease, color 0.3s ease; */
+  transition: background-color 0.8s ease, color 0.8s ease;
 }
 
 .theme-toggle {
@@ -57,5 +57,7 @@ body {
 
 .theme-dark .theme-toggle {
   /* background: rgba(148, 163, 184, 0.12); */
-  background: #000000;
+  background-color: (--background-color);
+    /* transition: background-color 0.3s ease, color 0.3s ease; */
+
 }
