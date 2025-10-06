@@ -5,19 +5,21 @@ import Threads from './components/Threads';
 import ThemeToggle from './components/ThemeToggle';
 import Nav from './components/Nav';
 import LandingSplash from './components/LandingSplash';
+import MobileBlocker from './components/MobileBlocker';
 import { Routes, Route } from "react-router-dom";
-
+import './App.css';
 function App() {
   return (
     <>
-    <html style={{marginBottom: '50px'}}>
+    <html className='page' style={{marginBottom: '50px'}}>
     <LandingSplash duration={2000} fadeDuration={600} />
+    <MobileBlocker title="Open this page in desktop" description="This experience is optimized for larger screens." />
     <div style={{position: 'absolute', top: '80vh', left: '-8vh', }}><ThemeToggle /></div>
     
     <div
       style={{
         border: '1px solid var(--border-color)',
-        margin: '5vh 5vh 0 5vh',
+        margin: '5vh 4vh 0 5vh',
         height: '89vh',
         position: 'relative',
         overflow: 'hidden',
@@ -32,6 +34,7 @@ function App() {
       <div
         style={{
           position: 'absolute',
+          inset: 0,
           width: '100%',
           height: '100%',
           overflow: 'hidden',
