@@ -35,7 +35,7 @@ const Nav = () => {
         </li>
         <li>
           <NavLink to="/skills" className={({ isActive }) => (isActive ? "active" : "")} style={linkStyle}>
-            {({ isActive }) => (isActive ? "●" : <><HiArrowUpRight /> Skill & Knowleadge</>)}
+            {({ isActive }) => (isActive ? "●" : <><HiArrowUpRight /> Skill & Knowledge</>)}
           </NavLink>
         </li>
       </ul>
