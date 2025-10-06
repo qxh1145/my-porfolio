@@ -28,6 +28,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "cp build/index.html build/404.html",
+    "build:docs": "react-scripts build && rm -rf docs && mkdir -p docs && cp -R build/* docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
