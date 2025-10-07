@@ -35,7 +35,7 @@ const ThemeToggle = () => {
   };
 
   return (
-    <div style={{ padding: 'none', gap:'10px',marginLeft: '2vh',position: 'absolute' ,transform: 'rotate(270deg)', fontSize : '15px', width: '197px', height: '10px'}} className="theme-toggle" role="group" aria-label="Theme selection">
+    <div style={{ padding: 'none', gap:'10px',marginLeft: '1vh',position: 'absolute' ,transform: 'rotate(270deg)', fontSize : '15px', width: '197px', height: '10px'}} className="theme-toggle" role="group" aria-label="Theme selection">
       <label className="theme-option">
         <input
           type="checkbox"
