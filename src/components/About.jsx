@@ -2,8 +2,9 @@
 const About = () => {
     return (
         <div className="list-group" style={{
-            position: 'absolute', top: '55%',
-            right: '5%', fontFamily: 'Courier New, Courier, monospace',
+            position: 'absolute', top: '60%',
+            // border: '1px solid black',
+            right: '3%', fontFamily: 'Courier New, Courier, monospace',
             fontWeight: 'bolder'
 
 
