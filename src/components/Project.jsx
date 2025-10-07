@@ -12,8 +12,13 @@ import { HiArrowUpRight } from 'react-icons/hi2';
 import Button from '@mui/joy/Button';
 
 const Project = () => {
+  const [visible, setVisible] = React.useState(false);
+    React.useEffect(() => {
+      const t = setTimeout(() => setVisible(true), 50);
+      return () => clearTimeout(t);
+    }, []);
   return (
-    <div style={{  position: 'absolute', top: '80%', right: '5%', fontFamily: 'Courier New, Courier, monospace', fontWeight: 'bolder' , }}>
+    <div className={`list-group about ${visible ? 'visible' : ''}`} style={{  position: 'absolute', top: '80%', right: '5%', fontFamily: 'Courier New, Courier, monospace', fontWeight: 'bolder' , }}>
      <div style={{display: 'flex', flexDirection: 'column',}}>
         <a href='https://qxh1145.github.io/bu-banh-online/' target='_blank'>Online Eating Moon Cake</a>
         <a href='https://qxh1145.github.io/bu-banh-online/' target='_blank'>Galery Online Viewing</a>

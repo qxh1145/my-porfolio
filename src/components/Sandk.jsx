@@ -7,9 +7,15 @@ import ListItemButton from '@mui/joy/ListItemButton';
 import { Grid } from '@mui/joy';
 
 const SandK = () => {
+  const [visible, setVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const t = setTimeout(() => setVisible(true), 50);
+    return () => clearTimeout(t);
+  }, []);
   return (
 
-    <div style={{  position: 'absolute', top: '53%', right: '1%', fontFamily: 'Courier New, Courier, monospace', fontWeight: 'bolder' }}>
+    <div className={`list-group about ${visible ? 'visible' : '' }`} style={{  position: 'absolute', top: '53%', right: '1%', fontFamily: 'Courier New, Courier, monospace', fontWeight: 'bolder' }}>
       <h3>Programming Language & Framework</h3>
       <ul>
         <li>Java, javascript, Swift</li>

@@ -1,0 +1,27 @@
+.about {
+  position: absolute;
+  top: 60%;
+  right: 3%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  color: var(--text-color);
+  opacity: 0;
+  transform: translateX(16px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.about.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about span {
+  display: block;
+  line-height: 1.2;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.about span:hover {
+  transform: translateX(2px);
+}
+
