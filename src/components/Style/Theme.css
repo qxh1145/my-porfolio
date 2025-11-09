@@ -40,7 +40,6 @@ body {
     border-color: var(--border-color) !important;
 }
 
-/* Animation cho các thành phần không xoay */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -52,7 +51,6 @@ body {
     }
 }
 
-/* Animation cho thành phần có xoay (ToggleDarkmode) */
 @keyframes fadeInRotate {
     from {
         opacity: 0;
@@ -72,7 +70,6 @@ body {
     animation: fadeInRotate 0.5s ease-out forwards;
 }
 
-/* CSS cho màn hình chào mừng */
 .welcome-screen {
     position: fixed;
     top: 0;
@@ -82,16 +79,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-color); /* Sử dụng màu nền của theme */
+    background-color: var(--background-color); 
     z-index: 9999;
     opacity: 1;
-    transition: opacity 0.5s ease-out; /* Hiệu ứng mờ dần trong 0.5s */
+    transition: opacity 0.5s ease-out; 
 }
 
 .welcome-screen.fading-out {
-    opacity: 0; /* Khi có class này, màn hình sẽ mờ đi */
+    opacity: 0; 
 }
 
 .welcome-screen h1 {
-    font-size: 4rem; /* Kích thước chữ "Hello" */
+    font-size: 4rem; 
 }

@@ -2,10 +2,10 @@ const Foreground = ({ children }) => (
   <div
     style={{
       position: "fixed",
-      inset: 50,              // trùng viền với Background
-      padding: 20,            // cách trong box đúng 40px
+      inset: 50,              
+      padding: 20,            
       boxSizing: "border-box",
-      zIndex: 1,              // nằm trên Background
+      zIndex: 1,             
       overflow: "auto",
     }}
   >

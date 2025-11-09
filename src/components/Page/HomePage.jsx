@@ -18,7 +18,7 @@ const HomePage = () => {
   const [showWelcome, setShowWelcome] = useState(true);
   const [isFading, setIsFading] = useState(false);
 
-  const { page } = usePageStore(); // Use the store
+  const { page } = usePageStore();
   let content = null;
   if (page == 1) {
     content = <Home />
@@ -31,22 +31,19 @@ const HomePage = () => {
   }
 
   useEffect(() => {
-    // Bắt đầu quá trình mờ dần sau 1.5 giây
     const fadeTimer = setTimeout(() => {
       setIsFading(true);
     }, 1500);
 
-    // Ẩn hoàn toàn component sau khi hiệu ứng mờ dần kết thúc (1.5s + 0.5s)
     const unmountTimer = setTimeout(() => {
       setShowWelcome(false);
     }, 2000);
 
-    // Dọn dẹp timer khi component bị hủy
     return () => {
       clearTimeout(fadeTimer);
       clearTimeout(unmountTimer);
     };
-  }, []); // Mảng rỗng đảm bảo useEffect chỉ chạy một lần khi component được tạo
+  }, []); 
 
   if (showWelcome) {
     return (
@@ -85,7 +82,7 @@ const HomePage = () => {
           </Row>
         </Row>
         <Row
-          key={page} /* Thêm key để kích hoạt lại animation */
+          key={page} 
           className="mt-5 fade-in-up" >
           {content}
         </Row>
