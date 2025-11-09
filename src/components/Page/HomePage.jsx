@@ -3,7 +3,7 @@ import Foreground from "./Foreground";
 import { useState, useEffect } from "react";
 import Name from "./Name";
 import Navspace from "./Navspace";
-import usePageStore from "../../store/pageStore"; // Import the store
+import usePageStore from "../../store/pageStore"; 
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
