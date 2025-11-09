@@ -39,3 +39,59 @@ body {
 .border {
     border-color: var(--border-color) !important;
 }
+
+/* Animation cho các thành phần không xoay */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation cho thành phần có xoay (ToggleDarkmode) */
+@keyframes fadeInRotate {
+    from {
+        opacity: 0;
+        transform: rotate(270deg) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(270deg) translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.fade-in-rotate {
+    animation: fadeInRotate 0.5s ease-out forwards;
+}
+
+/* CSS cho màn hình chào mừng */
+.welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color); /* Sử dụng màu nền của theme */
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease-out; /* Hiệu ứng mờ dần trong 0.5s */
+}
+
+.welcome-screen.fading-out {
+    opacity: 0; /* Khi có class này, màn hình sẽ mờ đi */
+}
+
+.welcome-screen h1 {
+    font-size: 4rem; /* Kích thước chữ "Hello" */
+}
