@@ -1,0 +1,39 @@
+/* Add this to disable transitions on initial load */
+.no-transition * {
+  transition: none !important;
+}
+
+/* Light Theme (Default) */
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --nav-bg-color: #e9ecef;
+  --card-bg-color: #ffffff;
+  --border-color: #dee2e6;
+  --primary-color: #007bff;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  --bg-color: #121212;
+  --text-color: #e9ecef;
+  --nav-bg-color: #1e1e1e;
+  --card-bg-color: #2a2a2a;
+  --border-color: #444;
+  --primary-color: #61dafb;
+}
+
+body {
+  background-color: var(--bg-color) !important; /* Use important to override other styles */
+  color: var(--text-color) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Example of how to use variables in your components */
+/*
+.my-component {
+  background-color: var(--card-bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+*/

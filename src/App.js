@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
+import usePageStore from './store/pageStore';
 import './App.css';
+import './Theme.css';
+import HomePage from './components/Page/HomePage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const isDarkMode = usePageStore((state) => state.isDarkMode);
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add('dark-theme');
+    } else {
+      document.body.classList.remove('dark-theme');
+    }
+  }, [isDarkMode]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HomePage/>
+    </>
   );
 }
 
