@@ -10,11 +10,12 @@ const Skill = () => {
                 <Card.Body>
                     <Card.Text as="div" className="themed-text">
                         <div >
-                            <h3>Programming Language & Framework</h3>
+                            <h3>Programming Language, Query Language & Framework</h3>
                             <ul>
                                 <li>Java, javascript, Swift</li>
-                                <li>React, NodeJS, ReactNative</li>
-                                <li>Tailwind-CSS, CSS-in-JS</li>
+                                <li>React, NodeJS</li>
+                                <li>Tailwind-CSS, ReactBootstrap</li>
+                                <li>SQL Server</li>
                             </ul>
                             <h3>What Language I speak ?</h3>
                             <ul>
@@ -26,7 +27,7 @@ const Skill = () => {
                             <ul>
                                 <li>Docker</li>
                                 <li>Git, Github</li>
-                                <li>VSCode, Intelliji, XCode,Notion, Jira, Postmam, pgAdmin4</li>
+                                <li>VSCode, Intelliji, XCode ,Notion, Jira, Postmam, pgAdmin4</li>
                             </ul>
                         </div>
                     </Card.Text>

@@ -22,7 +22,6 @@ const Background = () => {
 
         observer.observe(document.body, { attributes: true });
 
-        // Set initial color
         const initialTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
         setThreadColor(initialTheme === 'dark' ? [1, 1, 1] : [0, 0, 0]);
         setBorderColor(initialTheme === 'dark' ? '#FFF' : '#333');
@@ -39,8 +38,8 @@ const Background = () => {
                 overflow: "hidden",
                 padding: 0,
                 boxSizing: "border-box",
-                zIndex: -1,               // send to background
-                pointerEvents: "none",    // let clicks pass through
+                zIndex: -1,               
+                pointerEvents: "none",    
             }}
         >
             <Threads
