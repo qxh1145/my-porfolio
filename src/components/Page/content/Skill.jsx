@@ -12,9 +12,9 @@ const Skill = () => {
                         <div >
                             <h3>Programming Language, Query Language & Framework</h3>
                             <ul>
-                                <li>Java, javascript, Swift</li>
+                                <li>Java, javascript, Swift, HTML, CSS</li>
                                 <li>React, NodeJS</li>
-                                <li>Tailwind-CSS, ReactBootstrap</li>
+                                <li>Tailwind-CSS, ReactBootstrap, Bootstrap</li>
                                 <li>SQL Server</li>
                             </ul>
                             <h3>What Language I speak ?</h3>
