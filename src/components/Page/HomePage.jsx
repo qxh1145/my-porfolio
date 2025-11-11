@@ -48,7 +48,7 @@ const HomePage = () => {
   if (showWelcome) {
     return (
       <div className={`welcome-screen ${isFading ? 'fading-out' : ''}`}>
-        <h1>{"<>"}Tran Anh Quan <span style={{color: "red"}}>Porfolio</span>{"</>"}</h1>
+        <h1>{"<>"}Tran Anh Quan <span style={{color: "red"}}>Portfolio</span>{"</>"}</h1>
       </div>
     );
   }
