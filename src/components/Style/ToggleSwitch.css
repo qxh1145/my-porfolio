@@ -60,3 +60,10 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* Khôi phục kích thước phông chữ cho toggle dark mode */
+.dark-mode-toggle {
+  font-size: 1.43rem; /* 1 / 0.7 ≈ 1.428 */
+  display: flex; /* Căn chỉnh chữ và checkbox */
+  align-items: center;
+}

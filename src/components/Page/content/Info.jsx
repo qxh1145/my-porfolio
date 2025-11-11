@@ -5,8 +5,8 @@ import { FiLink } from "react-icons/fi";
 
 const Info = () => {
     return (
-        <Row>
-            <Row >
+        <Row className='mt-5'>
+            <Row className='mt-5'>
                 <Col md={5}>
                 </Col>
                 <Col md={7}><Card style={{ background: "transparent", width: "18rem", border: "none"}}>

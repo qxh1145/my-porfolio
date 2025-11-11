@@ -38,8 +38,8 @@ const Background = () => {
                 overflow: "hidden",
                 padding: 0,
                 boxSizing: "border-box",
-                zIndex: -1,               
-                pointerEvents: "none",    
+                zIndex: -1,
+                pointerEvents: "none",
             }}
         >
             <Threads

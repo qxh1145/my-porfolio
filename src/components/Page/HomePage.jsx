@@ -44,16 +44,11 @@ const HomePage = () => {
       clearTimeout(unmountTimer);
     };
   }, []); 
-  useEffect(() => {
-    // Thiết lập mức thu phóng của trang thành 55%
-    document.body.style.zoom = "80%";
-  }, []); // Mảng rỗng đảm bảo useEffect chỉ chạy một lần
-
 
   if (showWelcome) {
     return (
       <div className={`welcome-screen ${isFading ? 'fading-out' : ''}`}>
-        <div className="d-flex"><h1> {"<>"}Tran Anh Quan <span  style={{color: "red"}}>Porfolio</span>{"</>"}</h1>  </div>
+        <h1>{"<>"}Tran Anh Quan <span style={{color: "red"}}>Porfolio</span>{"</>"}</h1>
       </div>
     );
   }
@@ -64,10 +59,9 @@ const HomePage = () => {
         className="fade-in-rotate"
         style={{
           position: "fixed",
-          bottom: "10%",
-          left: "-2vh",
+          bottom: "7rem",
+          left: "0.1rem",
           zIndex: 10,
-          animationDelay: '0.4s'
         }}
       >
         <ToggleDarkmode />
@@ -87,7 +81,7 @@ const HomePage = () => {
           </Row>
         </Row>
         <Row
-          key={page} 
+          key={page}
           className="mt-5 fade-in-up" >
           {content}
         </Row>

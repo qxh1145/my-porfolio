@@ -23,9 +23,12 @@ body.dark-theme {
     --border-color: #ffffff;
 }
 
-body {
+html, body {
     background-color: var(--background-color);
     color: var(--text-color);
+    /* Đặt kích thước phông chữ trên cả html và body để đảm bảo tính nhất quán,
+       ảnh hưởng đến cả đơn vị rem và em. */
+    font-size: 70%;
 }
 
 .themed-text,
