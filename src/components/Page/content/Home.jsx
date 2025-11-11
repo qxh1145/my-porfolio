@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <Row className='mt-5'>
             <Col ></Col>
-            <Card style={{ background: "transparent", width: "18rem", marginTop: "14vh", border: "none"}}>
+            <Card style={{ background: "transparent", width: "18rem", marginTop: "25vh", border: "none"}}>
                 <Card.Body>
                     <Card.Text className="themed-text">
                         Born in 2005 in Hue, Vietnam. 

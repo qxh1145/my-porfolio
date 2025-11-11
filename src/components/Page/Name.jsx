@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 const Name = () => {
   return (
     <div>
-      <h1 style={{ margin: 0 }}>Tran Anh Quan</h1>
+      <h1 style={{ margin: 0 , fontSize: "80px"}}>Tran Anh Quan</h1>
       <p style={{ marginTop: 8, marginBottom: 0 }}>FPT University</p>
     </div>
   );

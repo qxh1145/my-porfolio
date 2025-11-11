@@ -6,7 +6,7 @@ const Skill = () => {
     return (
         <Row>
             <Col md={7}></Col>
-            <Col md={5}><Card style={{ background: "transparent", width: "100%", marginTop: "14vh", border: "none" }}>
+            <Col md={5}><Card style={{ background: "transparent", width: "100%", marginTop: "20vh", border: "none" }}>
                 <Card.Body>
                     <Card.Text as="div" className="themed-text">
                         <div >

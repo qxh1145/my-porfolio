@@ -2,7 +2,7 @@ const Foreground = ({ children }) => (
   <div
     style={{
       position: "fixed",
-      inset: 50,              
+      inset: 50,
       padding: 20,            
       boxSizing: "border-box",
       zIndex: 1,             
