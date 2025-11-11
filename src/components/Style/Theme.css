@@ -9,14 +9,12 @@ body.no-transition *:after {
     transition: none !important;
 }
 
-/* Light Theme */
 body.light-theme {
     --background-color: #ffffff;
     --text-color: #000000;
     --border-color: #333;
 }
 
-/* Dark Theme */
 body.dark-theme {
     --background-color: #121212;
     --text-color: #ffffff;
@@ -26,8 +24,6 @@ body.dark-theme {
 html, body {
     background-color: var(--background-color);
     color: var(--text-color);
-    /* Đặt kích thước phông chữ trên cả html và body để đảm bảo tính nhất quán,
-       ảnh hưởng đến cả đơn vị rem và em. */
     font-size: 70%;
 }
 
